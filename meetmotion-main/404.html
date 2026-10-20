@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <title>Page Not Found - Meet Motion</title>
+    <script>
+        const legacyRoutes = {
+            '/index.html': '/',
+            '/about-us.html': '/about-us/',
+            '/blog.html': '/blog/',
+            '/careers.html': '/careers/',
+            '/case-study.html': '/case-study/',
+            '/contact-us.html': '/contact-us/',
+            '/pricing-plan.html': '/pricing-plan/',
+            '/privacy-policy.html': '/privacy-policy/',
+            '/services.html': '/services/',
+            '/team.html': '/team/',
+            '/terms-and-conditions.html': '/terms-and-conditions/',
+            '/404.html': '/404/'
+        };
+        window.location.replace(legacyRoutes[window.location.pathname] || '/404/');
+    </script>
+</head>
+<body>
+    <p>Page not found. <a href="/404/">View our 404 page</a>.</p>
+</body>
+</html>
